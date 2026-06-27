@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  krishimitra:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY:-}
+      - SECRET_KEY=${SECRET_KEY:-replace_with_a_long_random_string}
+      - RATE_LIMIT_PER_MINUTE=${RATE_LIMIT_PER_MINUTE:-30}
+      - APP_ENV=production
+      - DATABASE_PATH=/app/database/data/krishimitra.db
+    volumes:
+      - krishimitra_data:/app/database/data
+    restart: unless-stopped
+
+volumes:
+  krishimitra_data:

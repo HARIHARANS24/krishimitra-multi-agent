@@ -1,0 +1,37 @@
+# ===========================================================
+# KrishiMitra AI - Python Dependencies
+# ===========================================================
+
+# --- Core / Web UI ---
+streamlit==1.38.0
+pandas==2.2.2
+numpy==1.26.4
+plotly==5.23.0
+
+# --- Google Gemini / Agent Development Kit ---
+google-generativeai==0.8.3
+google-adk==0.1.0           # Agent Development Kit (falls back to local orchestrator if unavailable)
+
+# --- MCP (Model Context Protocol) ---
+mcp==1.2.0
+
+# --- Validation, config & security ---
+pydantic==2.9.2
+python-dotenv==1.0.1
+email-validator==2.2.0
+
+# --- HTTP / async ---
+httpx==0.27.2
+anyio==4.6.0
+
+# --- Database ---
+SQLAlchemy==2.0.35
+
+# --- Testing ---
+pytest==8.3.3
+pytest-asyncio==0.24.0
+pytest-mock==3.14.0
+
+# --- Utilities ---
+python-dateutil==2.9.0.post0
+tenacity==9.0.0
